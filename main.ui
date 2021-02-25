@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1290</width>
+    <height>698</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>1189</width>
+      <height>630</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1250</width>
+      <height>720</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../AIVOPr/images/01972_hsbccelebrationoflight_1920x1080.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider">
+    <property name="geometry">
+     <rect>
+      <x>1199</x>
+      <y>40</y>
+      <width>151</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider_2">
+    <property name="geometry">
+     <rect>
+      <x>1200</x>
+      <y>90</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>1200</x>
+      <y>20</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Lumonisite</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>1200</x>
+      <y>70</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Floutter</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1290</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::ActionsContextMenu</enum>
+   </property>
+   <property name="defaultUp">
+    <bool>false</bool>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>true</bool>
+   </property>
+   <widget class="QMenu" name="menuOuvrir">
+    <property name="title">
+     <string>Ouvrir</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icons/16x16/Open_16px_1.png</normaloff>icons/16x16/Open_16px_1.png</iconset>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionEnregister"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuAmelioration">
+    <property name="title">
+     <string>Amelioration</string>
+    </property>
+    <addaction name="actionEgalisation"/>
+    <addaction name="actionConservation"/>
+   </widget>
+   <widget class="QMenu" name="menuFiltrage">
+    <property name="title">
+     <string>Filtrage</string>
+    </property>
+    <addaction name="actionMoyenne"/>
+    <addaction name="actionLissage"/>
+   </widget>
+   <widget class="QMenu" name="menuBinarisation">
+    <property name="title">
+     <string>Binarisation</string>
+    </property>
+    <addaction name="actionSeuil"/>
+    <addaction name="actionErosion"/>
+    <addaction name="actionDilatation"/>
+    <addaction name="actionContours"/>
+   </widget>
+   <widget class="QMenu" name="menuTransformation">
+    <property name="title">
+     <string>Transformation</string>
+    </property>
+    <addaction name="actionNiveau_de_Gris"/>
+    <addaction name="actionInversion"/>
+    <addaction name="actionSymetrie"/>
+   </widget>
+   <widget class="QMenu" name="menuRotation">
+    <property name="title">
+     <string>Rotation</string>
+    </property>
+    <addaction name="actionRotation_90"/>
+   </widget>
+   <widget class="QMenu" name="menuTranslation">
+    <property name="title">
+     <string>Translation</string>
+    </property>
+    <addaction name="actionTranslation_1_0_100_0_1_50"/>
+   </widget>
+   <addaction name="menuOuvrir"/>
+   <addaction name="menuTransformation"/>
+   <addaction name="menuAmelioration"/>
+   <addaction name="menuFiltrage"/>
+   <addaction name="menuBinarisation"/>
+   <addaction name="menuRotation"/>
+   <addaction name="menuTranslation"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>RightToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionOuvrir">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/16x16/Add Image_16px.png</normaloff>icons/16x16/Add Image_16px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ouvrir</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionEnregister">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/16x16/Save_16px.png</normaloff>icons/16x16/Save_16px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Enregister</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/16x16/Exit_16px.png</normaloff>icons/16x16/Exit_16px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionEgalisation">
+   <property name="text">
+    <string>Egalisation Histogramme</string>
+   </property>
+  </action>
+  <action name="actionMedian">
+   <property name="text">
+    <string>Median</string>
+   </property>
+  </action>
+  <action name="actionGaussien">
+   <property name="text">
+    <string>Gaussien</string>
+   </property>
+  </action>
+  <action name="actionMoyenne">
+   <property name="text">
+    <string>Moyenne</string>
+   </property>
+  </action>
+  <action name="actionLissage">
+   <property name="text">
+    <string>Lissage</string>
+   </property>
+  </action>
+  <action name="actionSeuil">
+   <property name="text">
+    <string>Seuillage Otsu</string>
+   </property>
+  </action>
+  <action name="actionErosion">
+   <property name="text">
+    <string>Erosion</string>
+   </property>
+  </action>
+  <action name="actionDilatation">
+   <property name="text">
+    <string>Dilatation</string>
+   </property>
+  </action>
+  <action name="actionNiveau_de_gris">
+   <property name="text">
+    <string>Niveau de gris</string>
+   </property>
+  </action>
+  <action name="actionNiveau_de_gris_2">
+   <property name="text">
+    <string>Niveau de gris</string>
+   </property>
+  </action>
+  <action name="actionNiveau_de_Gris">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/16x16/Open_16px_1.png</normaloff>icons/16x16/Open_16px_1.png</iconset>
+   </property>
+   <property name="text">
+    <string>Niveau de Gris</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/16x16/Add Image_16px.png</normaloff>icons/16x16/Add Image_16px.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ouvrir</string>
+   </property>
+  </action>
+  <action name="actionInversion">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/16x16/Sorting Arrows_16px_1.png</normaloff>icons/16x16/Sorting Arrows_16px_1.png</iconset>
+   </property>
+   <property name="text">
+    <string>Inversion Couleur</string>
+   </property>
+  </action>
+  <action name="actionRotation_90">
+   <property name="text">
+    <string>Rotation 90 </string>
+   </property>
+  </action>
+  <action name="actionRotation_45">
+   <property name="text">
+    <string>Rotation 45</string>
+   </property>
+  </action>
+  <action name="actionConservation">
+   <property name="text">
+    <string>Conservation</string>
+   </property>
+  </action>
+  <action name="actionSymetrie">
+   <property name="text">
+    <string>Symetrie</string>
+   </property>
+  </action>
+  <action name="actionContours">
+   <property name="text">
+    <string>Contours</string>
+   </property>
+  </action>
+  <action name="actionTranslation_1_0_100_0_1_50">
+   <property name="text">
+    <string>Translation [[1,0,100],[0,1,50]]</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>menubar</sender>
+   <signal>hovered(QAction*)</signal>
+   <receiver>label</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>71</x>
+     <y>8</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>77</x>
+     <y>71</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>label</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1215</x>
+     <y>85</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1183</x>
+     <y>92</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>label</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1220</x>
+     <y>117</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1152</x>
+     <y>119</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
